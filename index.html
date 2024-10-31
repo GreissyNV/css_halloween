@@ -11,11 +11,107 @@
             margin: 0;
             padding: 0;
         }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            /* overflow: hidden; */
+            cursor: pointer;
+            position: relative;
+        
+        }
+
+        figure {
+            background-color: orange;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-origin: 0 0;
+            transition: all 822ms ease-in-out;
+        }
+
+        /* To do. cambiar por .card:hover>figure */ 
+
+        .card:hover>figure {
+            transform: scale(0.5);
+            top: -10%;
+            left: -10%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+       
+
+
     </style>
 </head>
-<div class="container"></div>
-
 <body>
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="images/bruja.png" alt="Bruja Piruja">
+            </figure>
+         <div class="card__title">
+            <h2>Bruja</h2>
+            </div>
+         <div class="card__content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque dignissimos mollitia iste accusamus repellat hic aliquam sequi molestias sed, eligendi, non, doloribus unde qui nulla laborum praesentium? Ea, quam.</p>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="images/calabaza.png" alt="Calabaza">
+            </figure>
+            <div class="card__title">
+            <h2>Calabaza</h2>
+            </div>
+        <div class="card__content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque dignissimos mollitia iste accusamus repellat hic aliquam sequi molestias sed, eligendi, non, doloribus unde qui nulla laborum praesentium? Ea, quam.</p>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="images/fantasma.png" alt="Fantasma">
+            </figure>
+         <div class="card__title">
+            <h2>Fantasma</h2>
+            </div>
+        <div class="card__content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cumque dignissimos mollitia iste accusamus repellat hic aliquam sequi molestias sed, eligendi, non, doloribus unde qui nulla laborum praesentium? Ea, quam.</p>
+            </div>
+        </div>
+
+
+    </div>
 
 </body>
 
